@@ -18,7 +18,7 @@ import { NewsletterService } from '../../services/newsletter.service';
 })
 export class NewsletterFormComponent {
   newsletterForm!: FormGroup;
-  constructor(private servive: NewsletterService) {
+  constructor() {
     this.newsletterForm = new FormGroup({
       name: new FormControl('', [Validators.required]),
       email: new FormControl('', [Validators.required, Validators.email]),
